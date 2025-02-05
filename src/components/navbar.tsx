@@ -16,6 +16,7 @@ export default function Navbar() {
             </form>
             <Link href="/cargarProducto">Cargar Producto</Link>
             <Link href="/cargarLista">Cargar Lista</Link>
+            <Link href="/products">Ver Productos</Link>
         </nav>
     );
 }

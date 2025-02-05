@@ -1,0 +1,33 @@
+{
+  "name": "Next.js with React",
+  "dockerComposeFile": "compose.yaml",
+  "service": "app",
+  "remoteUser": "node",
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "20"
+    },
+    "ghcr.io/devcontainers-extra/features/typescript:2": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "ms-azuretools.vscode-docker"
+      ]
+    }
+  },
+  "portsAttributes": {
+    "3000": {
+      "label": "Next.js"
+    }
+  },
+  "forwardPorts": [
+    3000,
+    5432
+  ],
+
+  "postCreateCommand": "npm run dev"
+}

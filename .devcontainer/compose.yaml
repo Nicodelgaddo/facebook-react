@@ -1,0 +1,28 @@
+name: "facebook-react"
+
+services:
+  app:
+    build:
+      context: ..
+      dockerfile: .devcontainer/Dockerfile
+    volumes:
+      - ../..:/workspaces:cached
+    environment:
+      DATABASE_URL: "postgresql://postgres:postgres@db:5432/facebook-react"
+    depends_on:
+      - db
+    command: sleep infinity
+
+  db:
+    image: postgres:17
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: facebook-react
+    ports: 
+      - "5432:5432"
+    volumes:
+      - db-data:/var/lib/postgresql/data
+
+volumes:
+  db-data:
