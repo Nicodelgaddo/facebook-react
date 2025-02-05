@@ -1,0 +1,54 @@
+.fondo {
+    background-color: #ff7f7f; /* Rojo pastel */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none; /* Eliminar subrayado */
+}
+
+.formulario {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.boton {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.boton:hover {
+    background-color: #f5f5f5;
+}
+
+.a {
+    text-decoration: none; /* Eliminar el subrayado */
+    color: white; /* Cambiar el color de los enlaces */
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 15px; /* Espaciado entre los enlaces */
+    transition: color 0.3s ease; /* Transición suave al cambiar color */
+}
+
+.a:hover {
+    color: #333; /* Color más oscuro al pasar el mouse */
+}

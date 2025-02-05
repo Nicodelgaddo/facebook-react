@@ -1,12 +1,21 @@
-export default function navbar(){
+import styles from "./navbar.module.css";
+import Link from 'next/link'
+
+export default function Navbar() {
     return (
-        <nav>
-            <h1>ToolsControl</h1>
-            <form action="buscar"></form>
-            <input
-                type="text"
-                placeholder="Busacar por nombre o codigo"
-            />
-            <button type="submit" ></button>    
-        </nav>);
+        <nav className={styles.fondo}>
+            <Link className={styles.a} href="/"><h1 className={styles.logo}>ToolsControl</h1></Link>
+            
+            <form className={styles.formulario} action="buscar">
+                <input
+                    type="text"
+                    className={styles.input}
+                    placeholder="Buscar por nombre o código"
+                />
+                <button type="submit" className={styles.boton}>🔍</button>
+            </form>
+            <Link href="/cargarProducto">Cargar Producto</Link>
+            <Link href="/cargarLista">Cargar Lista</Link>
+        </nav>
+    );
 }
