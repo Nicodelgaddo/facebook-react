@@ -29,5 +29,5 @@
     5432
   ],
 
-  "postCreateCommand": "npm run dev"
+  "postCreateCommand": "npm install && npm run dev"
 }
