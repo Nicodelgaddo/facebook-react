@@ -4,6 +4,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 - Getting started
 	- [Native](#getting-started-native)
 	- [Dev containers](#getting-started-dev-containers)
+- [Seed database](#seed) 
 - [Objetive](#objetive)
 
 <a name="getting-started-native"></a>
@@ -45,6 +46,10 @@ This will pull the necessary images, install dependencies, and set up your envir
 
 4. **Access your application:**
 Open http://localhost:3000 in your browser.
+
+<a name="seed"></a>
+## Seed database
+Run **npx prisma db seed** to seed the database with data.
 
 ## Objetive
 
